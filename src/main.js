@@ -24,10 +24,12 @@ function animate() {
 }
 animate()
 
-// Add some Tailwind-styled HTML
+// If this were a Javascript-Driven App
+/*
 const app = document.querySelector('#app')
 app.innerHTML = `
   <h1 class="text-3xl font-bold text-center mt-8 text-blue-600">
     Hello Vite + Three.js + Tailwind CSS!
   </h1>
 `
+//*/
