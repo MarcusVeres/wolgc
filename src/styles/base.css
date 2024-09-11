@@ -1,0 +1,23 @@
+@layer base {
+  h1 {
+    @apply mb-6 text-4xl font-bold;  /* 213pt, line height 1 */
+  }
+  h2 {
+    @apply mb-5 text-3xl font-normal;  /* 109.7pt, line height 1 */
+  }
+  h3 {
+    @apply mb-4 text-2xl font-bold;  /* 72pt, line height 1.16 */
+  }
+  h4 {
+    @apply mb-3 text-xl font-bold;  /* 42pt */
+  }
+  h5 {
+    @apply mb-2 text-lg font-bold;  /* 26pt */
+  }
+  p {
+    @apply mb-4 text-base font-bold;  /* 16pt */
+  }
+  .bigger {
+    @apply text-lg;  /* 26pt, line height 42pt */
+  }
+}
