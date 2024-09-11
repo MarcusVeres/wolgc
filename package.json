@@ -1,0 +1,27 @@
+{
+  "name": "wolgc",
+  "version": "1.0.0",
+  "description": "Works of Love - Agency Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcusVeres/wolgc.git"
+  },
+  "keywords": [
+    "Works",
+    "of",
+    "Love",
+    "Game",
+    "Company",
+    "Ltd."
+  ],
+  "author": "Marcus Arcadius Veres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarcusVeres/wolgc/issues"
+  },
+  "homepage": "https://github.com/MarcusVeres/wolgc#readme"
+}
