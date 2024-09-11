@@ -1,7 +1,10 @@
 @import 'tailwindcss/base';
 @import './base.css';
+@import './colors.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
 /* Any additional custom styles can go here */
-
+section {
+  @apply p-20;
+}
