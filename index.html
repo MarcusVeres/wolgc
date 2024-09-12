@@ -12,57 +12,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-
-      .fade-top-bottom {
-          width: 100%;
-          position: absolute;
-          background: linear-gradient(
-              180deg,
-              rgba( 0 , 0 , 0 , 0.16 ),
-              transparent 20%,
-              transparent 80%,
-              rgba( 0 , 0 , 0 , 0.16 )
-          );
-          inset: 0;
-          /* pointer-event: none; */
-      }
-
-      .scroll-down {
-          animation: scroll_down 60s linear infinite;
-      }
-      .scroll-up {
-          animation: scroll_up 60s linear infinite;
-      }
-
-      @keyframes scroll_down {
-          0% {transform: translateY(-80%);}
-          100% {transform: translateY(0%);}
-      }
-      @keyframes scroll_up {
-          0% {transform: translateY(0%);}
-          100% {transform: translateY(-80%);}
-      }
-
-      .scrolling-column-wrapper {
-        @apply flex flex-col items-center justify-around w-full whitespace-nowrap;
-      }
-      .scrolling-item-wrapper {
-        @apply relative w-full pt-10 overflow-hidden;
-        height: 512px;
-      }
-      .scrolling-item {
-        @apply w-full h-full shadow-lg rounded-3xl bg-gray-600 bg-no-repeat bg-center bg-cover;
-        background-size: 100%; /* Initial size */
-        transition: background-size 0.5s ease; /* Smooth transition for background size change */
-      }
-      .scrolling-item:hover {
-        /* scale up background size */
-        background-size: 132%;
-      }
-
-    </style>
-
   </head>
   <body>
 
@@ -97,11 +46,7 @@
           <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://placehold.it/200x400")'></div></div>
           <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://placehold.it/200x400")'></div></div>
         </div>
-
-        <!-- <div class='fade-top-bottom'></div> -->
-    </div>
-
-
+      </div>
 
       <section class="demo">
         <h1 class="text-2xl md:text-3xl lg:text-4xl">Responsive Heading</h1>
@@ -191,8 +136,35 @@
           <div class="flex items-end justify-center col-span-12 lg:col-span-6 lg:justify-end">
             <img src="https://placehold.it/512x512" alt="Placeholder" class="w-full h-auto max-w-md rounded-lg lg:max-w-full" />
           </div>
-          <div class="col-span-12 bg-slate-950" style="height:800px;">
-            Gallery Goes Here
+          <div class="relative flex flex-col w-full col-span-12 mx-auto overflow-hidden text-white sm:grid sm:grid-cols-4 whitespace-nowrap gap-x-10" style="height: 540px;">
+            <div class='scrolling-column-wrapper scroll-down'>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+            </div>
+            <div class='scrolling-column-wrapper scroll-up'>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+            </div>
+            <div class='scrolling-column-wrapper scroll-down'>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+            </div>
+            <div class='scrolling-column-wrapper scroll-up'>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+              <div class="scrolling-item-wrapper"><div class="scrolling-item" style='background-image: url("https://drscdn.500px.org/photo/1070597377/q%3D90_m%3D2048/v2?sig=0b176a5f8355be4fe9148ea82deec7b32a9779275e71d304a1006d60cb18ac88")'></div></div>
+            </div>
           </div>
           <div class="col-span-12 mt-8 space-y-8">
             <h3 class="text-2xl font-semibold">Are you prepared to tap into the reservoir of your creative potential?</h3>

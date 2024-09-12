@@ -25,6 +25,22 @@ section {
   z-index: 10;  /* Ensures the strip is above the content */
 }
 
+
+.fade-top-bottom {
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+      180deg,
+      rgba( 0 , 0 , 0 , 0.16 ),
+      transparent 20%,
+      transparent 80%,
+      rgba( 0 , 0 , 0 , 0.16 )
+  );
+  inset: 0;
+  /* pointer-event: none; */
+}
+
+
 /* TODO // Maybe move these to their respective areas */
 
 @keyframes gradient {
@@ -85,34 +101,38 @@ section {
 
 }
 
+/* Animated Scrolling */ 
 
-@keyframes animateUp {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+
+
+.scroll-down {
+  animation: scroll_down 60s linear infinite;
 }
-@keyframes animateDown {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(10px); }
+.scroll-up {
+  animation: scroll_up 60s linear infinite;
 }
-.animate-up {
-  animation: animateUp 2s ease-in-out infinite;
+
+@keyframes scroll_down {
+  0% {transform: translateY(-80%);}
+  100% {transform: translateY(0%);}
 }
-.animate-down {
-  animation: animateDown 2s ease-in-out infinite;
+@keyframes scroll_up {
+  0% {transform: translateY(0%);}
+  100% {transform: translateY(-80%);}
 }
-.column:nth-child(odd) .photo:nth-child(odd) {
-  animation: animateUp 2s ease-in-out infinite;
+
+.scrolling-column-wrapper {
+  @apply flex flex-col items-center justify-around w-full whitespace-nowrap;
 }
-.column:nth-child(odd) .photo:nth-child(even) {
-  animation: animateDown 2s ease-in-out infinite;
+.scrolling-item-wrapper {
+  @apply relative w-full h-full mt-10 overflow-hidden rounded-3xl;
+  height: 512px;
 }
-.column:nth-child(even) .photo:nth-child(odd) {
-  animation: animateDown 2s ease-in-out infinite;
+.scrolling-item {
+  @apply w-full h-full transition-all duration-500 ease-in-out bg-gray-600 bg-center bg-no-repeat shadow-lg rounded-3xl bg-opacity-45;
+  background-size: cover;
 }
-.column:nth-child(even) .photo:nth-child(even) {
-  animation: animateUp 2s ease-in-out infinite;
-}
-.photo {
-  transition: transform 0.3s ease-in-out;
-  will-change: transform;
+.scrolling-item:hover {
+  @apply bg-opacity-100;
+  transform: scale(1.32);
 }
