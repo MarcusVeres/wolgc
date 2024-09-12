@@ -24,3 +24,28 @@ section {
   background-color: rgba(0, 0, 0, 0.16);
   z-index: 10;  /* Ensures the strip is above the content */
 }
+
+/* TODO // Maybe move these to their respective areas */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  @apply text-4xl font-bold;
+  background: linear-gradient(90deg, #D3023B, #FF0047, #D3023B);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: gradient 5s ease infinite;
+}
