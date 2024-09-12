@@ -9,10 +9,11 @@ section {
   @apply px-16 pt-24 pb-40;
 }
 .section-content-wrapper {
-  @apply relative z-20 grid max-w-xs grid-cols-12 gap-8 mx-auto md:max-w-sm xl:max-w-lg 2xl:max-w-xl 4xl:max-w-2xl 5xl:max-w-3xl 6xl:max-w-5xl md:gap-12;
+  @apply relative z-20 grid max-w-xs grid-cols-12 gap-8 mx-auto md:max-w-sm xl:max-w-lg 2xl:max-w-xl 3xl:max-w-2xl 4xl:max-w-3xl 5xl:max-w-4xl 6xl:max-w-5xl md:gap-12;
 }
 
 .sidestrip {
+  padding-left: 8%; /* compensate for visual space "lost" due to sidestrip */
   position: relative;
   overflow: hidden;  /* This ensures the strip doesn't cause horizontal scrolling */
 }
@@ -124,12 +125,16 @@ section {
   100% {transform: translateY(-80%);}
 }
 
+.scrolling-container {
+  @apply relative flex flex-col w-full col-span-12 mx-auto overflow-hidden sm:grid sm:grid-cols-4 whitespace-nowrap gap-x-4 5xl:gap-x-10 h-[540px] 4xl:h-[720px];
+  /* height: 540px; */
+}
 .scrolling-column-wrapper {
   @apply flex flex-col items-center justify-around w-full whitespace-nowrap;
 }
 .scrolling-item-wrapper {
-  @apply relative w-full h-full mt-10 overflow-hidden rounded-3xl;
-  height: 512px;
+  @apply relative w-full mt-4 overflow-hidden 5xl:mt-10 rounded-3xl h-[400px] 4xl:h-[512px];
+  /* height: 512px; */
 }
 .scrolling-item {
   @apply w-full h-full transition-all duration-500 ease-in-out bg-gray-600 bg-center bg-no-repeat shadow-lg rounded-3xl bg-opacity-45;
