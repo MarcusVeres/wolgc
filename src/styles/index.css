@@ -5,6 +5,16 @@
 @import 'tailwindcss/utilities';
 
 /* Any additional custom styles can go here */
+
+h1.hero {
+  @apply md:text-lg xl:text-2xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl;
+  @apply flex flex-col items-start justify-center;
+}
+h1.hero span {
+    display: inline-block;
+}
+/**/
+
 section {
   @apply px-16 pt-24 pb-40;
 }
@@ -29,6 +39,7 @@ section {
   z-index: 10;  /* Ensures the strip is above the content */
 }
 
+/**/
 
 .fade-top-bottom {
   width: 100%;

@@ -1,6 +1,6 @@
 @layer base {
   h1 {
-    @apply mb-6 text-4xl font-bold;  /* 213pt, line height 1 */
+    @apply mb-6 text-6xl font-bold; /* 213pt, line height 1 */
   }
   h2 {
     @apply mb-5 text-3xl font-normal;  /* 109.7pt, line height 1 */

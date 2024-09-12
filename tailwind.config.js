@@ -45,7 +45,9 @@ module.exports = {
         'xl': ['2.625rem', { lineHeight: '1.2' }],    // 42px (h4)
         '2xl': ['4.5rem', { lineHeight: '1.16' }],    // 72px (h3)
         '3xl': ['6.85rem', { lineHeight: '1', letterSpacing: '0.01em' }],    // 109.7px (h2)
-        '4xl': ['13.3125rem', { lineHeight: '0.84', letterSpacing: '-0.02em' }], // 213px (h1)
+        '4xl': ['8.3125rem', { lineHeight: '0.84', letterSpacing: '-0.02em' }], // 213px (h1)
+        '5xl': ['10.3125rem', { lineHeight: '0.84', letterSpacing: '-0.02em' }], // 213px (h1)
+        '6xl': ['13.3125rem', { lineHeight: '0.84', letterSpacing: '-0.02em' }], // 213px (h1)
       },
       maxWidth: {
         'xs': XS,
