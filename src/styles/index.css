@@ -84,3 +84,35 @@ section {
   animation: gradient 45s linear infinite; /* Linear for seamless transition */
 
 }
+
+
+@keyframes animateUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes animateDown {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}
+.animate-up {
+  animation: animateUp 2s ease-in-out infinite;
+}
+.animate-down {
+  animation: animateDown 2s ease-in-out infinite;
+}
+.column:nth-child(odd) .photo:nth-child(odd) {
+  animation: animateUp 2s ease-in-out infinite;
+}
+.column:nth-child(odd) .photo:nth-child(even) {
+  animation: animateDown 2s ease-in-out infinite;
+}
+.column:nth-child(even) .photo:nth-child(odd) {
+  animation: animateDown 2s ease-in-out infinite;
+}
+.column:nth-child(even) .photo:nth-child(even) {
+  animation: animateUp 2s ease-in-out infinite;
+}
+.photo {
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
