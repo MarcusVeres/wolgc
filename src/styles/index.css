@@ -41,11 +41,46 @@ section {
 
 .gradient-text {
   @apply text-4xl font-bold;
-  background: linear-gradient(90deg, #D3023B, #FF0047, #D3023B);
-  background-size: 200% 200%;
+  background: linear-gradient(148deg, 
+    #6D02A8, 
+    #3E005E, 
+    #B0006B, 
+    #870052, 
+    #DC0086, 
+    #B0006B, 
+    #D3023B, 
+    #FF0047, 
+    #EA3A00, 
+    #EB5400, 
+    #F09B00, 
+    #FAAF03, 
+    #F09B00, 
+    #EB5400, 
+    #EA3A00, 
+    #FF0047, 
+    #D3023B, 
+    #B0006B, 
+    #DC0086, 
+    #870052, 
+    #B0006B, 
+    #3E005E, 
+    #6D02A8
+    /* #188D37, 
+    #0AB036, 
+    #1459A8, 
+    #105EB8, 
+    #6D02A8,
+    #B0006B, 
+    #870052, 
+    #DC0086, 
+    #B0006B, 
+    #D3023B, 
+    #FF0047 */
+  );
+  background-size: 800% 400%; /* Ensures a large enough gradient area for smooth transition */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
-  animation: gradient 5s ease infinite;
+  animation: gradient 45s linear infinite; /* Linear for seamless transition */
+
 }
