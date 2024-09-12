@@ -16,7 +16,7 @@ h1.hero span {
 /**/
 
 section {
-  @apply px-16 pt-24 pb-40;
+  @apply px-16 pt-24 pb-40 dark:text-white;
 }
 .section-content-wrapper {
   @apply relative z-20 grid max-w-xs grid-cols-12 gap-8 mx-auto md:max-w-sm xl:max-w-lg 2xl:max-w-xl 3xl:max-w-2xl 4xl:max-w-3xl 5xl:max-w-4xl 6xl:max-w-5xl md:gap-12;
