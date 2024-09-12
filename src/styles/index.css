@@ -10,6 +10,7 @@ h1.hero {
   @apply md:text-lg xl:text-2xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl;
   @apply flex flex-col items-start justify-center;
 }
+h1 span,
 h1.hero span {
     display: inline-block;
 }
