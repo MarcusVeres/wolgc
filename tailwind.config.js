@@ -19,6 +19,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'selector',
   theme: {
     breakpointsInspector: {
       position: ['top', 'right'],

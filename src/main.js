@@ -1,3 +1,4 @@
+import './scripts/colors.js'
 import './styles/index.css'
 import * as THREE from 'three'
 
@@ -33,3 +34,6 @@ app.innerHTML = `
   </h1>
 `
 //*/
+
+
+
