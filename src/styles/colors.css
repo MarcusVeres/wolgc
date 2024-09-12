@@ -1,7 +1,7 @@
 @layer base {
   :root {
     --gradient-height: 64px;
-    --gradient-opacity-start: 0.4;
+    --gradient-opacity-start: 0.32;
     --default-angle: 150deg;
     --overlay-gradient: linear-gradient(
       to bottom, 
@@ -12,7 +12,9 @@
 
   .bg-gradient { background-image: var(--overlay-gradient); }
 
-  .bg-gradient-white  { background-image: var(--overlay-gradient), linear-gradient(var(--default-angle), #ECF0FE, #EEF2FF); }
+  .bg-gradient-white  { background-image: linear-gradient(var(--default-angle), #ECF0FE, #EEF2FF); }
+  .bg-gradient-black  { background-image: linear-gradient(var(--default-angle), #131015, #110E11); }
+
   .bg-gradient-red    { background-image: var(--overlay-gradient), linear-gradient(var(--default-angle), #D3023B, #FF0047); }
   .bg-gradient-orange { background-image: var(--overlay-gradient), linear-gradient(var(--default-angle), #EA3A00, #EB5400); }
   .bg-gradient-yellow { background-image: var(--overlay-gradient), linear-gradient(var(--default-angle), #F09B00, #FAAF03); }
@@ -21,4 +23,12 @@
   .bg-gradient-purple { background-image: var(--overlay-gradient), linear-gradient(var(--default-angle), #6D02A8, #3E005E); }
   .bg-gradient-violet { background-image: var(--overlay-gradient), linear-gradient(var(--default-angle), #B0006B, #870052); }
   .bg-gradient-pink   { background-image: var(--overlay-gradient), linear-gradient(var(--default-angle), #DC0086, #B0006B); }
+
+  .bg-gradient-pink-bottom {
+    background-image: 
+      var(--overlay-gradient),
+      linear-gradient(to top, rgb(0 0 0 / var(--gradient-opacity-start)) 0%, rgb(0 0 0 / 0) var(--gradient-height)),
+      linear-gradient(var(--default-angle), #DC0086, #B0006B);
+  }
+
 }

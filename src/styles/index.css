@@ -6,5 +6,21 @@
 
 /* Any additional custom styles can go here */
 section {
-  @apply p-20;
+  @apply px-16 pt-24 pb-40;
+}
+
+.sidestrip {
+  position: relative;
+  overflow: hidden;  /* This ensures the strip doesn't cause horizontal scrolling */
+}
+.sidestrip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* width: 122px; */
+  width: 8%;
+  background-color: rgba(0, 0, 0, 0.16);
+  z-index: 10;  /* Ensures the strip is above the content */
 }
