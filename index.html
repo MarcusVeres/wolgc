@@ -17,7 +17,8 @@
 
     <div id="app" class="dark:bg-gradient-black">
 
-      <div class="scrolling-container" style="width: 1600px;">
+      <!-- Scrolling Demo -->
+      <!-- <div class="scrolling-container" style="width: 1600px;">
         <div class='scrolling-column-wrapper scroll-down'>
           <div class="scrolling-item-wrapper"><div class="scrolling-item bg-slate-900" style='background-image: url("x")'></div></div>
           <div class="scrolling-item-wrapper"><div class="scrolling-item bg-slate-900" style='background-image: url("x")'></div></div>
@@ -46,17 +47,14 @@
           <div class="scrolling-item-wrapper"><div class="scrolling-item bg-slate-900" style='background-image: url("x")'></div></div>
           <div class="scrolling-item-wrapper"><div class="scrolling-item bg-slate-900" style='background-image: url("x")'></div></div>
         </div>
-      </div>
+      </div> -->
 
-      <section class="demo">
+      <!-- Typography Demo -->
+      <!-- <section class="demo">
         <h1 class="text-2xl md:text-3xl lg:text-4xl">Responsive Heading</h1>
-
         <h1 class="mt-8 text-3xl font-bold text-center text-red-600">
           Hello Vite + Three.js + Tailwind CSS!
         </h1>
-        
-        <!-- Add more of your HTML content here -->
-
         <h1>Main Heading (213pt)</h1>
         <h2>Subheading (109.7pt)</h2>
         <h3>Tertiary Heading (72pt)</h3>
@@ -64,23 +62,21 @@
         <h5>Fifth-level Heading (26pt)</h5>
         <p>Regular paragraph (16pt).</p>
         <p class="bigger">Bigger paragraph (26pt with 42pt line height).</p>
-      </section>
+      </section> -->
 
       <button id="dark-mode-toggle" class="fixed right-0 z-50 p-4 font-bold bg-red-500 top-20 color-white">Toggle Dark Mode</button>
 
       <!-- Pearlescent Section -->
-      <section class="min-h-screen text-gray-900 bg-gradient-white dark:bg-gradient-black">
-
-        <div class="flex flex-row items-center justify-between px-3 mx-auto nav-1" style="max-width: 1920px;"> <!-- TODO // Consider making this a class -->
-          <h1 class="text-xl text-red-600 uppercase lg:leading-none">Works <br><span>of Love</span></h1><!-- TODO // FIX -->
+      <section class="min-h-screen pt-16 text-gray-900 bg-gradient-white dark:bg-gradient-black dark:text-white">
+        <div class="flex flex-row items-start justify-between px-3 mx-auto nav-1" style="max-width: 1920px;"> <!-- TODO // Consider making this a class -->
+          <h1 class="text-xl uppercase text-brand-red-alt lg:leading-none">Works <br><span>of Love</span></h1><!-- TODO // FIX -->
           <ul class="flex-row hidden text-lg font-bold uppercase lg:flex">
-            <li class="transition-all duration-300 ease-in-out rounded-full dark:text-white hover:text-red-600"><a href="#" class="block p-4">Services</a></li>
-            <li class="transition-all duration-300 ease-in-out rounded-full dark:text-white hover:text-red-600"><a href="#" class="block p-4">Work</a></li>
-            <li class="transition-all duration-300 ease-in-out rounded-full dark:text-white hover:text-red-600"><a href="#" class="block p-4">Case Studies</a></li>
-            <li class="ml-4 text-white transition-all duration-300 ease-in-out rounded-full dark:bg-white dark:text-slate-950 dark:hover:text-white bg-slate-950 hover:bg-green-600"><a href="#" class="block p-4">Contact</a></li>
+            <!-- <li class="transition-all duration-300 ease-in-out rounded-full dark:text-white hover:text-brand-red-alt"><a href="#" class="block p-4">Services</a></li> -->
+            <li class="transition-all duration-300 ease-in-out rounded-full dark:text-white hover:text-brand-red-alt"><a href="#" class="block p-4">Work</a></li>
+            <li class="transition-all duration-300 ease-in-out rounded-full dark:text-white hover:text-brand-red-alt"><a href="#" class="block p-4">Case Studies</a></li>
+            <li class="ml-4 text-white transition-all duration-300 ease-in-out rounded-full dark:bg-white dark:text-slate-950 dark:hover:text-white bg-slate-950 hover:bg-brand-red"><a href="#" class="block p-4">Contact</a></li>
           </ul>
         </div>
-
         <div class="relative z-20 grid items-stretch justify-between grid-cols-12 mx-auto mt-8 md:flex-row" style="max-width: 1920px;">
           <h1 aria-label="Holistic Creative Agency" class="relative z-10 col-span-12 leading-snug uppercase gradient-text hero" >
             <span>Holistic</span>
@@ -89,41 +85,32 @@
           </h1>
           <img src="/src/assets/logo.png" alt="Your Logo" class="right-0 z-0 w-auto h-full col-span-12 md:col-span-1 md:absolute">
         </div>
-        <!-- 
-        <div class="relative z-20 grid items-stretch justify-between grid-cols-12 mx-auto md:flex-row" style="max-width: 1920px;">
-          <h1 class="relative z-10 col-span-12 leading-snug uppercase gradient-text xl:col-span-8 hero">
-              Holistic Creative Agency
-          </h1>
-          <img src="/src/assets/logo.png" alt="Your Logo" class="absolute inset-0 z-0 object-contain w-full h-full col-span-12 xl:col-span-4">
-        </div>
-
-        <div class="relative z-20 grid items-stretch justify-between grid-cols-12 mx-auto md:flex-row" style="max-width: 1920px;">
-            <h1 class="col-span-12 leading-snug uppercase fuckoff gradient-text xl:col-span-8">Holistic Creative Agency</h1>
-            <img src="/src/assets/logo.png" alt="Your Logo" class="object-contain w-full h-full col-span-12 xl:col-span-4">
-        </div>
-        -->
-
         <div class="relative z-20 grid grid-cols-12 gap-8 mx-auto mt-12 md:gap-12" style="max-width: 1920px;">
           <div class="col-span-12 bg-slate-950" style="height: 720px;">
             Gallery Goes Here
           </div>
-          <div class="col-span-12 space-y-8 lg:col-span-8">
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Works of Love is a company dedicated to illuminating great ideas with innovation, light, and love. We believe in the power of creativity and compassion to mak</p>
-              <ul>
-                <li>Buttons!</li>
-                <li>Two of em</li>
-              </ul>
+          <div class="grid grid-cols-12 col-span-12 xxspace-y-8 md:space-x-20">
+            <!-- <div class="gap-8 cols-span-12 md:col-span-4">
+              <h4>Digital Experience Design for <span class="transition-all text-brand-green-alt">Wellness Brands</span></h4>
+              <p>
+                Works of Love is dedicated to illuminating great ideas. 
+              </p>
+            </div> -->
+            <div class="gap-8 cols-span-12 md:col-span-4">
+              <h4><span class="text-brand-red">Digital</span> Experiences for <span class="transition-all text-brand-red">Wellness</span> Brands</h4>
+              <p>
+                We craft impactful  for health and wellness leaders.
+                Dedicated to illuminating great ideas. 
+              </p>
+            </div>
+            <div class="gap-12 cols-span-12 md:col-span-8">
+              <h3 class="text-2xl font-semibold leading-none">Ready to amplify your voice?</h3>
+              <div class="flex flex-col items-start gap-4 sm:flex-row">
+                <a href="#" class="px-6 py-3 font-bold text-white uppercase transition-all duration-500 rounded-full bg-brand-red-alt hover:text-slate-950 hover:bg-gray-200">Let's Talk</a>
+                <a href="#" class="px-6 py-3 font-bold text-white uppercase transition-all duration-500 rounded-full bg-slate-950 hover:bg-white hover:text-slate-950">Let's take the tour</a>
+              </div>
             </div>
           </div>   
-          <div class="col-span-12 mt-8 space-y-8">
-            <h3 class="text-2xl font-semibold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</h3>
-            <div class="flex flex-col items-start gap-4 sm:flex-row">
-              <a href="#" class="px-6 py-3 font-bold text-orange-600 uppercase transition-colors bg-white rounded-full hover:bg-gray-200">Totam Rem</a>
-              <a href="#" class="px-6 py-3 font-bold text-white transition-colors bg-transparent border-2 border-white rounded-full hover:bg-white hover:text-orange-600">Aperiam Eaque</a>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -131,26 +118,33 @@
       <section class="min-h-screen text-white dark:bg-gradient-black sidestrip bg-gradient-red">
         <div class="section-content-wrapper">
           <div class="col-span-12 space-y-8 lg:col-span-6">
-            <h5 class="pb-20 text-lg">Safety, Stability, Survival.</h5>
-            <h4 class="text-xl text-gray-800 dark:text-brand-red-alt">01</h4>
-            <h2 class="text-3xl font-bold uppercase">Nourish success</h2>
-            <h4 class="text-xl">Root your foundation deeply.</h4>
+            <h5 class="kicker">Safety, Stability, Survival.</h5>
+            <h4 class="text-gray-800 deck dark:text-brand-red-alt">01</h4>
+            <h2 class="title">Nourish success</h2>
+            <h4 class="subtitle">Root your foundation deeply.</h4>
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
               <p>
                 Imagine a towering redwood, its branches reaching for the sky. Unseen, its vast root network spreads wide, anchoring the giant and feeding its ascent. Your business is that magnificent tree, and sales are its life-giving roots.
                 <!-- In the realm of business, sales are your vital essence—the very foundation of your creative legacy. Just as the root chakra grounds us in our physical existence, a robust sales strategy anchors your visionary endeavors in prosperity. -->
               </p>
               <p>
-                We don't just boost numbers; we cultivate a thriving ecosystem. Our sustainable, ethical sales strategies are the rich soil from which your empire will grow. We'll help you dig deep, build wide, and create a foundation as solid as bedrock.
+                The roots of any enterprise are the transactions (sales) that infuse money and enable its survival. Sales are the foundation of business growth. To truly thrive, we develop sustainable, ethical sales strategies that will carry your business forward. 
+                <!-- We don't just boost numbers; we cultivate a thriving ecosystem. Our sustainable, ethical sales strategies are the rich soil from which your empire will grow. We'll help you dig deep, build wide, and create a foundation as solid as bedrock. -->
               </p>
             </div>
           </div>
           <div class="flex items-end justify-center col-span-12 lg:col-span-6 lg:justify-end">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" x="0px" y="0px" class="w-full h-auto max-w-md rounded-lg lg:max-w-full dark:fill-brand-red-alt">
+              <g transform="translate(0, 20)">
+                <path d="M54.11,25.95117a.99136.99136,0,0,0-.98-.85H46.94a4.67565,4.67565,0,0,1-2.06-.42,7.16965,7.16965,0,0,0-5.65,0,5.49265,5.49265,0,0,1-4.13995,0,6.36242,6.36242,0,0,0-2.55-.57,16.917,16.917,0,0,0-.11-2.54773c7.15406,2.34637,9.60919-4.44849,9.52991-8.49011a.99208.99208,0,0,0-.98993-.98993c-1.09387-.08466-10.04541.399-10.41,5.36a5.01687,5.01687,0,0,0-1.89-1.14c2.28461-8.45477-8.13543-10.09583-11.64007-9.98987A.98569.98569,0,0,0,16.04,7.3034c0,.36206.00641,6.85077,3.25,10.1,2.31518,2.42474,6.31164,2.23,8.58.73h.01c1.82837.39581,2.8595,2.61584,2.66,6.17a6.7612,6.7612,0,0,1,2-.19v3.50775l3.89,1.02a3.52054,3.52054,0,0,1,2.28,1.87994l.87,1.83a1.002,1.002,0,0,1-1.81.86l-.87-1.82995a1.502,1.502,0,0,0-.98-.81l-2.54-.67.7,1.44a3.35254,3.35254,0,0,1-.17,3.22l-2.35,3.79a.99906.99906,0,0,1-1.7-1.05l2.35-3.8a1.34449,1.34449,0,0,0,.07-1.29l-1.2-2.46-1.19.63c-1.37.62-2.18,2.31-2.89,3.53a1.00173,1.00173,0,0,1-1.73-1.01l1.03-1.75c.86-1.63,2.64-2.59,4.24-3.37v-3.48c-1.27.33-1.61.81-3.17.8a4.69148,4.69148,0,0,1-2.07-.42,6.50161,6.50161,0,0,0-2.83-.58c-2.54-.02-2.61.97-4.88995,1H10.87a1.03186,1.03186,0,0,0-1.01,1v3.51a.99654.99654,0,0,0,1,1h4.55v10.5a16.58,16.58,0,0,0,33.16,0v-10.5h4.57a.99654.99654,0,0,0,1-1v-3.51A.79592.79592,0,0,0,54.11,25.95117Zm-28.51,26.56a13.06329,13.06329,0,0,1-6.68-11.4s-.22-6.56-.31-10.52h2.31v10.52c-.15,8.34,9.33,13.8,16.49,9.64a11.01056,11.01056,0,0,0,5.63-9.64v-10.52h2v10.52C45.24,50.89117,34.05,57.46111,25.6,52.51116Z"/>
+              </g>
+            </svg>
+          </div>
+          <!-- <div class="flex items-end justify-center col-span-12 lg:col-span-6 lg:justify-end">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" x="0px" y="0px" class="w-full h-auto max-w-md rounded-lg lg:max-w-full dark:fill-brand-red-alt">
               <g><path d="M49.055,44.888a13.939,13.939,0,0,0-10.276-5.107l-1.789-.069L29.751,33.92A4.044,4.044,0,0,0,23.783,39.2l-2.543-.1a9.029,9.029,0,0,1-4.376-1.332L7.677,32.114a3.738,3.738,0,0,0-4.187.2,3.725,3.725,0,0,0-.4,5.616l3.58,3.58a1,1,0,0,0,1.414-1.414l-3.58-3.58a1.726,1.726,0,0,1,.18-2.6,1.74,1.74,0,0,1,1.949-.092l9.177,5.65A11.031,11.031,0,0,0,21.162,41.1l17.541.68a11.942,11.942,0,0,1,8.8,4.375L60.228,61.635a1,1,0,0,0,1.544-1.27ZM25.729,38.469A2.043,2.043,0,0,1,28.5,35.482l5.123,4.1-7.12-.276Z"/><path d="M29.13,50.386l-6.87-.76a15.045,15.045,0,0,1-8.943-4.3l-2.4-2.4A1,1,0,0,0,9.5,44.337l2.4,2.4A17.051,17.051,0,0,0,22.04,51.614l6.87.76a10.977,10.977,0,0,1,7.938,4.831l2.9,4.35a1,1,0,1,0,1.664-1.11l-2.9-4.35a13.1,13.1,0,0,0-1.131-1.437l4.332,1.3A1.023,1.023,0,0,0,42,56a1,1,0,0,0,.287-1.958l-10-3Z"/><path d="M10.92,18.32A8.9,8.9,0,0,0,14,25.036,3,3,0,0,1,11,28a1,1,0,0,0,0,2,3,3,0,0,1,3,3,1,1,0,0,0,2,0,3,3,0,0,1,3-3,1,1,0,0,0,0-2,2.991,2.991,0,0,1-2.558-1.454,8.868,8.868,0,0,0,4.649.595l6.169-.881a9.092,9.092,0,0,1,3.374.127,9.417,9.417,0,0,1,7.283,8.005l.09.73a1,1,0,0,0,1.549.709l1.958-1.308A7.887,7.887,0,0,0,45,27.04a1,1,0,1,0-1.988.219,5.886,5.886,0,0,1-2.606,5.6l-.262.176a11.417,11.417,0,0,0-5.3-11.056l2.312.011a5.855,5.855,0,0,1,4.162,1.736c.125.126.24.257.352.389a1,1,0,1,0,1.528-1.289c-.147-.175-.3-.347-.465-.513a7.834,7.834,0,0,0-5.572-2.323L24.54,19.93h-.12a1.732,1.732,0,0,1-1.439-.766,1.725,1.725,0,0,1,1.593-2.677l16.143,1.231a7.074,7.074,0,0,0,7.02-4.154A2.99,2.99,0,0,1,49,16a1,1,0,0,0,2,0,3,3,0,0,1,3-3,1,1,0,0,0,0-2,3,3,0,0,1-3-3,1,1,0,0,0-2,0,2.97,2.97,0,0,1-.7,1.909A6.983,6.983,0,0,0,42.91,3.836l-7.681-1.81a1,1,0,0,0-.936,1.681l2.45,2.45a2.6,2.6,0,0,1,0,3.686,2.547,2.547,0,0,1-2.483.686A44.343,44.343,0,0,0,29.1,9.578a43.313,43.313,0,0,0-7.342-.267l-2.367.12a8.864,8.864,0,0,0-4.35,1.382A1,1,0,1,0,16.119,12.5a6.78,6.78,0,0,1,3.372-1.069l2.369-.12a41.119,41.119,0,0,1,7,.254,42.352,42.352,0,0,1,4.927.909,4.57,4.57,0,0,0,5.468-5.936,7.5,7.5,0,0,1,1.006,9.141L24.737,14.494a3.725,3.725,0,1,0-.317,7.436h.1l4.791.294a9.5,9.5,0,0,1,8.47,6.6,11.393,11.393,0,0,0-6.689-4.385h0l-9.131-2.248a4.465,4.465,0,0,1-.615-8.471,1,1,0,0,0-.754-1.854,6.466,6.466,0,0,0,.891,12.267l2.395.59-3.065.437A6.893,6.893,0,0,1,13.729,15.1a1,1,0,0,0-1.769-.934A8.939,8.939,0,0,0,10.92,18.32ZM15,30a5.043,5.043,0,0,0-1-1,5.043,5.043,0,0,0,1-1,5.043,5.043,0,0,0,1,1A5.043,5.043,0,0,0,15,30ZM50,11a5.043,5.043,0,0,0,1,1,5.043,5.043,0,0,0-1,1,5.043,5.043,0,0,0-1-1A5.043,5.043,0,0,0,50,11ZM40.972,5.435l1.479.348a5.048,5.048,0,0,1,3.89,5.183A2.938,2.938,0,0,1,46,11a1,1,0,0,0-1,1,.985.985,0,0,0,.8.959,5.064,5.064,0,0,1-.563.89,4.963,4.963,0,0,1-2.67,1.725A9.54,9.54,0,0,0,40.972,5.435Z"/><path d="M61,24a3,3,0,0,1-3-3,1,1,0,0,0-2,0,3,3,0,0,1-3,3,1,1,0,0,0,0,2,3,3,0,0,1,3,3,1,1,0,0,0,2,0,3,3,0,0,1,3-3,1,1,0,0,0,0-2Zm-4,2a5.043,5.043,0,0,0-1-1,5.043,5.043,0,0,0,1-1,5.043,5.043,0,0,0,1,1A5.043,5.043,0,0,0,57,26Z"/><path d="M3,8a3,3,0,0,1,3,3,1,1,0,0,0,2,0,3,3,0,0,1,3-3,1,1,0,0,0,0-2A3,3,0,0,1,8,3,1,1,0,0,0,6,3,3,3,0,0,1,3,6,1,1,0,0,0,3,8ZM7,6A5.043,5.043,0,0,0,8,7,5.043,5.043,0,0,0,7,8,5.043,5.043,0,0,0,6,7,5.043,5.043,0,0,0,7,6Z"/><path d="M57,6h1V7a1,1,0,0,0,2,0V6h1a1,1,0,0,0,0-2H60V3a1,1,0,0,0-2,0V4H57a1,1,0,0,0,0,2Z"/><path d="M50,38a1,1,0,0,0,1-1V36h1a1,1,0,0,0,0-2H51V33a1,1,0,0,0-2,0v1H48a1,1,0,0,0,0,2h1v1A1,1,0,0,0,50,38Z"/><path d="M3,20H4v1a1,1,0,0,0,2,0V20H7a1,1,0,0,0,0-2H6V17a1,1,0,0,0-2,0v1H3a1,1,0,0,0,0,2Z"/><circle cx="60" cy="13" r="1"/><circle cx="47" cy="22" r="1"/><circle cx="18" cy="7" r="1"/><circle cx="29" cy="3" r="1"/></g>
             </svg>
-            <!-- <img src="https://placehold.it/512x512" alt="Placeholder" class="w-full h-auto max-w-md rounded-lg lg:max-w-full" /> -->
-          </div>
+          </div> -->
           <div class="col-span-12 mt-8 space-y-8">
             <h3 class="text-2xl font-semibold">Are you ready to transcend financial limitations & manifest your true creative potential?</h3>
             <div class="flex flex-col items-start gap-4 sm:flex-row">
@@ -165,13 +159,18 @@
       <section class="min-h-screen text-white dark:bg-gradient-black sidestrip bg-gradient-orange">
         <div class="section-content-wrapper">
           <div class="col-span-12 space-y-8 lg:col-span-6">
-            <h5 class="text-lg">Ignite Your Passion for Change.</h5>
-            <h4 class="text-xl text-gray-800">02</h4>
-            <h2 class="text-3xl font-bold uppercase">Awaken Creativity</h2>
-            <h4 class="text-xl">Unleash Your Creative Wellspring.</h4>
+            <h5 class="kicker">Creativity, Pleasure, Relationships.</h5>
+            <h4 class="text-gray-800 deck">02</h4>
+            <h2 class="title">Awaken Creativity</h2>
+            <h4 class="subtitle">Express yourself authentically.</h4>
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-              <p>In the realm of visionary enterprise, creativity is your ambrosia—the sweet nectar that sets you apart. Just as the sacral chakra governs our emotional fluidity and creative expression, your innovative spirit fuels the very essence of your business.</p>
-              <p>Envision a world where your ideas flow like a mighty river, unrestrained and pure. Where each creative impulse manifests as a transformative force in your industry. This is the power of aligning your sacral chakra with unbridled innovation.</p>
+              <p>
+                Picture a river, wild and free, carving its unique path through the landscape. Your creativity is that river - unstoppable, transformative, and entirely your own. We're here to remove the dams and let it flow.
+                <!-- In the realm of visionary enterprise, creativity is your ambrosia—the sweet nectar that sets you apart. Just as the sacral chakra governs our emotional fluidity and creative expression, your innovative spirit fuels the very essence of your business. -->
+              </p>
+              <p>Our approach isn't about forcing ideas; it's about creating the perfect conditions for your innate creativity to flourish. We blend intuitive design with strategic thinking, crafting digital experiences that are as unique as your fingerprint and as powerful as your purpose.
+                <!-- Envision a world where your ideas flow like a mighty river, unrestrained and pure. Where each creative impulse manifests as a transformative force in your industry. This is the power of aligning your sacral chakra with unbridled innovation. -->
+              </p>
             </div>
           </div>
           <div class="flex items-end justify-center col-span-12 lg:col-span-6 lg:justify-end">
@@ -208,9 +207,12 @@
             </div>
           </div>
           <div class="col-span-12 mt-8 space-y-8">
-            <h3 class="text-2xl font-semibold">Are you prepared to tap into the reservoir of your creative potential?</h3>
+            <h3 class="closing">
+              Are you ready to unleash the full force of your creative potential? 
+              <!-- Let's dive into the deep end of your imagination and make waves in your industry.  -->
+            </h3>
             <div class="flex flex-col items-start gap-4 sm:flex-row">
-              <a href="#" class="px-6 py-3 font-bold uppercase transition-colors bg-white rounded-full text-slate-950 hover:bg-yellow-500 hover:text-black">I'm ready</a>
+              <a href="#" class="px-6 py-3 font-bold uppercase transition-colors bg-white rounded-full text-slate-950 hover:bg-yellow-500 hover:text-black">Let's make waves</a>
               <a href="#" class="px-6 py-3 font-bold text-orange-200 uppercase transition-colors rounded-full bg-gray-950 hover:bg-yellow-500 hover:text-black">How can you help?</a>
             </div>
           </div>

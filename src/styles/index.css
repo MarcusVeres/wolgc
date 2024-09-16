@@ -40,6 +40,32 @@ section {
   z-index: 10;  /* Ensures the strip is above the content */
 }
 
+/* Typography */
+
+.kicker {
+  @apply pb-20 text-lg;
+}
+.deck {
+  @apply text-xl;
+}
+.title {
+  @apply text-3xl font-bold uppercase;
+}
+.subtitle {
+  @apply text-xl;
+}
+/* .lede {
+  @apply ;
+}*/
+.closing {
+  @apply text-2xl font-semibold;
+}
+
+
+
+
+
+
 /**/
 
 .fade-top-bottom {
