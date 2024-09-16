@@ -1,3 +1,14 @@
+const customColors = {
+  'brand-red':    { DEFAULT: '#D3023B', alt: '#FF0047' },
+  'brand-orange': { DEFAULT: '#EA3A00', alt: '#EB5400' },
+  'brand-yellow': { DEFAULT: '#F09B00', alt: '#FAAF03' },
+  'brand-green':  { DEFAULT: '#188D37', alt: '#0AB036' },
+  'brand-blue':   { DEFAULT: '#1459A8', alt: '#105EB8' },
+  'brand-purple': { DEFAULT: '#6D02A8', alt: '#3E005E' },
+  'brand-violet': { DEFAULT: '#B0006B', alt: '#870052' },
+  'brand-pink':   { DEFAULT: '#DC0086', alt: '#B0006B' },
+};
+
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 const XS = '320px';
@@ -25,6 +36,7 @@ module.exports = {
       position: ['top', 'right'],
     },
     extend: {
+      colors: customColors,
       container: {
         center: true,
         padding: {
@@ -82,5 +94,20 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-breakpoints-inspector'),
+
+    // LLM Code to allow customColors to affect SVGs 
+    // TODO / Move to its own file. 
+    function({ addUtilities, theme }) {
+      const newUtilities = Object.entries(theme('colors')).reduce((acc, [name, value]) => {
+        if (typeof value === 'object') {
+          Object.entries(value).forEach(([key, color]) => {
+            acc[`.fill-${name}${key === 'DEFAULT' ? '' : `-${key}`}`] = { fill: color };
+            acc[`.stroke-${name}${key === 'DEFAULT' ? '' : `-${key}`}`] = { stroke: color };
+          });
+        }
+        return acc;
+      }, {});
+      addUtilities(newUtilities, ['responsive', 'hover', 'dark']);
+    },
   ],
 }
