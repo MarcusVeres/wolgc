@@ -7,7 +7,7 @@
 /* Any additional custom styles can go here */
 
 h1.hero {
-  @apply md:text-lg xl:text-2xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl;
+  @apply text-2xl md:text-lg xl:text-2xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl;
   @apply flex flex-col items-start justify-center;
 }
 h1 span,
@@ -17,7 +17,7 @@ h1.hero span {
 /**/
 
 section {
-  @apply px-16 pt-24 pb-40 transition-all duration-700 ease-in-out dark:text-white;
+  @apply px-4 pt-6 pb-10 transition-all duration-700 ease-in-out lg:px-16 lg:pt-24 lg:pb-40 dark:text-white;
 }
 .section-content-wrapper {
   @apply relative z-20 grid max-w-xs grid-cols-12 gap-8 mx-auto md:max-w-sm xl:max-w-lg 2xl:max-w-xl 3xl:max-w-2xl 4xl:max-w-3xl 5xl:max-w-4xl 6xl:max-w-5xl md:gap-12;
